@@ -1,37 +1,375 @@
-index.htmlDOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Monalisa Moda e Estilo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Monalisa Moda e Estilo</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fffaf8;
+    color: #4b2520;
+}
+
+.topo {
+    background: #a95d55;
+    color: white;
+    padding: 12px 5%;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    font-size: 15px;
+}
+
+header {
+    background: white;
+    padding: 25px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo .simbolo {
+    font-size: 55px;
+    color: #b78332;
+    font-weight: bold;
+}
+
+.logo h1 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    letter-spacing: 3px;
+    color: #55251f;
+}
+
+.logo p {
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+
+.slogan {
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: #a95d55;
+    margin-top: 8px;
+}
+
+.pesquisa {
+    border: 1px solid #d9b9b2;
+    border-radius: 30px;
+    padding: 15px 20px;
+    width: 400px;
+    color: #777;
+}
+
+nav {
+    background: #f5dfda;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #572a25;
+    font-weight: bold;
+}
+
+.hero {
+    min-height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+    background:
+        linear-gradient(rgba(255,235,225,.75), rgba(255,235,225,.75)),
+        linear-gradient(135deg, #d9b3a6, #fff3ed);
+}
+
+.hero h2 {
+    font-family: Georgia, serif;
+    font-size: 58px;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.hero h3 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.hero p {
+    font-size: 25px;
+    font-style: italic;
+    margin: 25px 0;
+}
+
+.botao {
+    display: inline-block;
+    background: #a95d55;
+    color: white;
+    text-decoration: none;
+    padding: 16px 35px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.secao {
+    padding: 45px 6%;
+    text-align: center;
+}
+
+.secao h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(80,30,20,.12);
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.foto {
+    height: 230px;
+    background: linear-gradient(135deg, #ead0c7, #f8eee9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+}
+
+.card h3 {
+    padding: 15px 10px 5px;
+}
+
+.card p {
+    padding: 5px 15px 18px;
+    color: #777;
+}
+
+.destaque {
+    background: #f5dfda;
+}
+
+.contato {
+    background: #6d342d;
+    color: white;
+    padding: 45px 6%;
+    text-align: center;
+}
+
+.contato h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.contato p {
+    margin: 12px;
+    font-size: 17px;
+}
+
+.contato a {
+    color: white;
+}
+
+footer {
+    background: #3f211d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+    .logo h1 {
+        font-size: 28px;
+    }
+
+    .pesquisa {
+        width: 100%;
+    }
+
+    .hero h2 {
+        font-size: 38px;
+    }
+
+    .hero h3 {
+        font-size: 24px;
+    }
+}
+</style>
 </head>
 
 <body>
-  <h1>Monalisa Moda e Estilo</h1>
 
-  <h2>Moda Casual e Moda Praiana</h2>
+<div class="topo">
+    <span>📱 WhatsApp: (11) 98859-5702</span>
+    <span>☎️ Telefone: (11) 2364-7382</span>
+    <span>✉️ Monalisap764@gmail.com</span>
+</div>
 
-  <p>Encontre looks modernos, confortáveis e cheios de estilo.</p>
+<header>
 
-  <h3>✨ Nossos produtos</h3>
-  <p>Roupas femininas • Moda praiana • Moda casual • Acessórios</p>
+<div class="logo">
+    <div class="simbolo">♛ M</div>
+    <h1>MONALISA</h1>
+    <p>MODA E ESTILO</p>
+    <div class="slogan">Mais que moda, é você bem consigo!</div>
+</div>
 
-  <h3>📲 Entre em contato</h3>
+<div class="pesquisa">
+    🔍 O que você está procurando?
+</div>
 
-  <p>
-    WhatsApp:
-    <a href="https://wa.me/5511988595702">
-      (11) 98859-5702
+</header>
+
+<nav>
+    <a href="#inicio">INÍCIO</a>
+    <a href="#novidades">NOVIDADES</a>
+    <a href="#praia">MODA PRAIA</a>
+    <a href="#casual">MODA CASUAL</a>
+    <a href="#vestidos">VESTIDOS</a>
+    <a href="#conjuntos">CONJUNTOS</a>
+    <a href="#blusas">BLUSAS</a>
+    <a href="#shorts">SHORTS</a>
+</nav>
+
+<section class="hero" id="inicio">
+<div>
+    <h2>MONALISA</h2>
+    <h3>MODA E ESTILO</h3>
+    <p>Seu estilo em todos os momentos!</p>
+
+    <a class="botao" href="#produtos">
+        CONHEÇA NOSSAS COLEÇÕES →
     </a>
-  </p>
+</div>
+</section>
 
-  <p>Telefone: (11) 2364-7382</p>
+<section class="secao" id="produtos">
 
-  <p>
-    E-mail:
-    <a href="mailto:Monalisap764@gmail.com">
-      Monalisap764@gmail.com
-    </a>
-  </p>
+<h2>✨ Nossas Coleções</h2>
+
+<div class="produtos">
+
+<div class="card" id="praia">
+    <div class="foto">🌴👙</div>
+    <h3>Moda Praia</h3>
+    <p>Sol, estilo e liberdade</p>
+    <a class="botao" href="https://wa.me/5511988595702">Ver produtos</a>
+</div>
+
+<div class="card" id="casual">
+    <div class="foto">👗✨</div>
+    <h3>Moda Casual</h3>
+    <p>Conforto e elegância</p>
+    <a class="botao" href="https://wa.me/5511988595702">Ver produtos</a>
+</div>
+
+<div class="card" id="vestidos">
+    <div class="foto">👗💃</div>
+    <h3>Vestidos</h3>
+    <p>Para todas as ocasiões</p>
+    <a class="botao" href="https://wa.me/5511988595702">Ver produtos</a>
+</div>
+
+<div class="card" id="conjuntos">
+    <div class="foto">👚👖</div>
+    <h3>Conjuntos</h3>
+    <p>Looks completos e modernos</p>
+    <a class="botao" href="https://wa.me/5511988595702">Ver produtos</a>
+</div>
+
+<div class="card" id="blusas">
+    <div class="foto">👚🌸</div>
+    <h3>Blusas</h3>
+    <p>Estilo para todos os momentos</p>
+    <a class="botao" href="https://wa.me/5511988595702">Ver produtos</a>
+</div>
+
+<div class="card" id="shorts">
+    <div class="foto">🩳☀️</div>
+    <h3>Shorts</h3>
+    <p>Praticidade e estilo</p>
+    <a class="botao" href="https://wa.me/5511988595702">Ver produtos</a>
+</div>
+
+</div>
+</section>
+
+<section class="secao destaque" id="novidades">
+
+<h2>✨ Novidades Monalisa</h2>
+
+<p style="font-size:20px; margin-bottom:25px;">
+    Descubra peças lindas para renovar seu guarda-roupa.
+</p>
+
+<a class="botao" href="https://wa.me/5511988595702">
+    FALAR NO WHATSAPP
+</a>
+
+</section>
+
+<section class="contato" id="contato">
+
+<h2>📲 Entre em contato</h2>
+
+<p>WhatsApp:
+<a href="https://wa.me/5511988595702">
+(11) 98859-5702
+</a>
+</p>
+
+<p>Telefone: (11) 2364-7382</p>
+
+<p>E-mail:
+<a href="mailto:Monalisap764@gmail.com">
+Monalisap764@gmail.com
+</a>
+</p>
+
+<p>💖 Monalisa Moda e Estilo</p>
+
+</section>
+
+<footer>
+© 2026 Monalisa Moda e Estilo — Todos os direitos reservados.
+</footer>
+
 </body>
-</html>
+</h
